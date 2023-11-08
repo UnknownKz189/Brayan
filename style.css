@@ -1,0 +1,444 @@
+@font-face {
+    font-family: woodfont;
+    src: url(woodfont.otf);
+}
+/* PAGINA INDEX */
+
+.botones{
+    width: 20%;
+    height: 40%;
+    justify-content: space-between;
+    position: absolute;
+    left: 60%;
+    bottom: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-jugar, .texto-agregar, .texto-guardar, .texto-cancelar, .texto-nueva, .texto-desistir{
+    text-align: center;
+    position: absolute;
+    font-family: woodfont;
+    color: #5E3E58;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.texto-jugar{
+    font-size: 350%;
+}
+
+.texto-agregar{
+    width: 100%;
+    font-size: 280%;
+}
+
+.btn-jugar{
+    display: flex;
+    width: 130%;
+}
+
+.btn-agregar{
+    display: flex;
+    width: 130%;
+}
+
+.paginaIndex a, .paginaAgregar a {  
+    cursor: pointer;
+    justify-content: center;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+a:hover .btn-agregar{
+    width: 135%;
+}
+
+a:hover .btn-jugar{
+    width: 135%;
+}
+
+a:hover p{
+    color: #2CB094;
+    transform: scale(1.03);
+}
+
+.video{
+    position: absolute;
+    bottom: 0px;
+    left: -3%;
+    width: 90%;
+}
+
+.principal, .destellos{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* PAGINA JUGAR */
+
+.fondo-juego{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+.horca{
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    width: 90%;
+    animation: horca 1s;
+}
+
+@keyframes horca { 
+    0% {
+      opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.sencillo{
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    width: 90%;
+    animation: none;
+}
+
+.cont-palabra{
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    display: flex;
+}
+
+.palabra{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    position: absolute;
+}
+
+span{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+    font-size: 50px;
+    font-family: woodfont;
+    color: white;
+}
+.palabra b{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    text-decoration: none;
+}
+
+span img{
+    visibility: visible;
+    width: 70px;
+}
+
+.container-letrasErradas{
+    visibility: hidden;
+    position: absolute;
+    height: 20%;
+    width: 30%;
+    top: 50%;
+    left: 58.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: letrasErradas 1s;
+}
+
+@keyframes letrasErradas {
+    0% {
+      opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.letrasErradas{
+    padding: 10px 15px;
+    background-color: #000000b7;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: woodfont;
+    color: white;
+}
+
+.palabra-letrasErradas{
+    font-size: 25px;
+    font-family: woodfont;
+    color: #2CB094;
+}
+
+.aparecer{
+    visibility: visible;
+}
+
+.cont-repetida{
+    position: absolute;
+    top: 30%;
+    right: 19%;
+}
+
+.repetida{
+    font-size: 30px;
+    font-family: woodfont;
+    color: white; 
+    text-shadow: 2px 2px 0px #000000;
+    display: block;
+    visibility: hidden;
+    animation: repetida 2.5s;
+}
+
+@keyframes repetida { 
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.jugar-nueva{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 12%;
+    cursor: pointer;
+}
+.jugar-desistir{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 12%;
+    cursor: pointer;
+}
+
+.btn{
+    width: 110%;
+}
+
+.texto-nueva, .texto-desistir{
+    display: flex;
+    text-align: center;
+    font-size: 230%;
+    top: 25%;
+}
+
+.intentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 20%;
+}
+.intentos img{
+    width: 40%;
+}
+.intentos p{
+    position: absolute;
+    font-size: 110px;
+    color: #5E3E58;
+    text-shadow: 2px 3px 0px #000000;
+}
+.titulo{
+    position: absolute;
+    top: -20%;
+    font-size: 25px;
+    font-family: woodfont;
+    color: #2CB094;
+}
+
+.alertaCorrecto-fondo, .alertaFallo-fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alertaCorrecto-fondo{
+    visibility: hidden;
+    animation: aparecer 3s;
+}
+.alertaFallo-fondo{
+    visibility: hidden;
+    animation: aparecer 3.5s;
+}
+
+@keyframes aparecer { 
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+.alertaCorrecto{
+    position: absolute;
+    bottom: 40%;
+    width: 40%;
+}
+.alertaFallo{
+    position: absolute;
+    bottom: 40%;
+    width: 40%;
+    /* visibility: hidden; */
+}
+.texto-alertaFallo{
+    position: absolute;
+    color: #2CB094;
+    text-shadow: 4px 4px 0px #000000;
+    font-family: woodfont;
+    font-size: 380%;
+    /* visibility: hidden;    */
+}
+
+/* PAGINA AGREGAR */
+
+.fondo-agregar{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+.botones-agregar{
+    width: 40%;
+    height: 15%;
+    justify-content: space-between;
+    position: absolute;
+    left: 30.5%;
+    bottom: 13%;
+    display: flex;
+    flex-direction: row;
+}
+.btn-guardar, .btn-cancelar{
+    display: flex;
+    width: 100%;
+}
+.texto-guardar{
+    width: 35%;
+    font-size: 250%;
+}
+.texto-cancelar{
+    font-size: 250%;
+}
+.botones-agregar a{
+    width: 47%;
+}
+a:hover .btn-cancelar{
+    width: 105%;
+}
+a:hover .btn-guardar{
+    width: 105%;
+}
+.input-text{
+    text-align: center;
+    color: #2CB094;
+    resize: none;
+    word-wrap: break-word;
+    background: none;
+    border: none;
+    font-family: woodfont;
+    font-size: 400%;
+    height: 11%;
+    width: 30%;
+    position: absolute;
+    bottom: 50%;
+    left: 35%;
+}
+::placeholder{
+    position: relative;
+    top: 7px;
+    text-align: center;
+    font-size: 80%;
+    color: gray;
+}
+.input-text:focus{
+    outline: 0;
+}
+
+.cont-alertasAgregar{
+    position: absolute;
+    width: 35%;
+    bottom: 36%;
+    left: 33.5%;
+}
+
+.alertaAgregar{
+    position: absolute;
+    font-size: 25px;
+    font-family: woodfont;
+    text-align: center;
+    color: white;  
+    text-shadow: 2px 2px 0px #000000;
+    display: block;
+    visibility: hidden;
+    animation: alerta 4s;
+}
+
+@keyframes alerta { 
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/* APARTE */
+
+.paginaIndex{
+    display: block;
+}
+.paginaJugar{
+    display: none;
+}
+.paginaAgregar{
+    display: none;
+}
