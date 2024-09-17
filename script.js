@@ -14,14 +14,14 @@ let nuevoArray2 = [];
 // let pattern = new RegExp('[A-ZÑ]?'); //patron para letras entre la A y la Z mayusculas y la Ñ
 var palabras = 
 [
-"TRAZABILIDAD",
-"REQUISITOS",
-"CONGELAR",
-"REQUERIMIENTOS",
-"INSTALACION",
-"MANUAL",
-"PRUEBAS",
-"MANTENIMIENTO",
+"TRABAJO",
+"JUGAR",
+"TABLA",
+"DEPORTE",
+"COMPUTADOR",
+"MODEM",
+"ROUTER",
+"UTP",
 "SOPORTE",
 ];
 
